@@ -90,7 +90,6 @@ Note:
 	and update:
 
 	this:
-            # see if there is NDK clang on $PATH, "universal" or "standalone"
             if (which("clang") =~ m|^$ndk/.*/prebuilt/([^/]+)/|) {
                 my $host=$1;
                 # harmonize with gcc default
