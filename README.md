@@ -64,8 +64,11 @@ Scripts for build of the openssl lib (for Android x86, x86_6, armeabi-v7a, arm64
 13. built libs and includes will be copied into:
 
     ./_build/libs/arm64-v8a
+
     ./_build/libs/armeabi-v7a
+
     ./_build/libs/x86
+
     ./_build/libs/x86_64 
 
     ./_build/include
