@@ -32,7 +32,7 @@ Scripts for build of the openssl lib (for Android x86, x86_6, armeabi-v7a, arm64
     D:/sman/sdk/android/android-sdk.cur/ndk-bundle
 
 4. Add Environment Variable ANDROID_NDK_HOME:
-	ANDROID_NDK_HOME="d:/sman/sdk/android/android-ndk-r20"
+	ANDROID_NDK_HOME="d:/sman/sdk/android/android-ndk-r21d"
     
 5. Add to the top of path:
     %ANDROID_NDK_HOME%\toolchains\llvm\prebuilt\windows-x86_64\bin
@@ -50,7 +50,7 @@ Scripts for build of the openssl lib (for Android x86, x86_6, armeabi-v7a, arm64
 		Just you need setup variables in the script: _build_openssl.sh.
     
 10. setup in _build_openssl.sh 
-    export API_LEVEL=21  
+    export API_LEVEL=23
 
 11. setup in _build_openssl.sh 
     BUILD_TARGETS="armeabi-v7a arm64-v8a x86 x86_64";
@@ -91,6 +91,7 @@ Note:
 
 	this:
 
+            # see if there is NDK clang on $PATH, "universal" or "standalone"
             if (which("clang") =~ m|^$ndk/.*/prebuilt/([^/]+)/|) {
                 my $host=$1;
                 # harmonize with gcc default
