@@ -90,6 +90,7 @@ Note:
 	and update:
 
 	this:
+
             if (which("clang") =~ m|^$ndk/.*/prebuilt/([^/]+)/|) {
                 my $host=$1;
                 # harmonize with gcc default
