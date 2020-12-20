@@ -160,7 +160,7 @@ Note:
 
 	Configure
 
-		and update:
+	and update:
 
 	this:
 
