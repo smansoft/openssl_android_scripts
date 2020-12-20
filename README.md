@@ -74,11 +74,11 @@ Note:
         
         Configure (build of apps is disabled, only build of static libs (.a) is provided);
         
-2. All paths (in script) should contain only "/" instead "\\", i.e.:
+2. All paths (in script) should contains only "/" instead "\\", i.e.:
 
     D:/sman/sdk/android/android-sdk.cur/ndk-bundle
 
-3. Path in ANDROID_NDK_HOME should contain only "/" instead "\\" too.
+3. Path in ANDROID_NDK_HOME should contains only "/" instead "\\" too.
 
 4. "\\" can be used only in PATH:
 
