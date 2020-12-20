@@ -3,7 +3,9 @@ Scripts for build of the openssl lib (for Android x86, x86_6, armeabi-v7a, arm64
 
 ### Windows x86_64 (windows-x86_64/):
 
-Full archive, that contains all sources and build scripts (openssl-1.1.1i):
+Full archive, that contains all sources, build scripts and binaries (armeabi-v7a, arm64-v8a, x86, x86_64):
+
+openssl-1.1.1i:
 
 	http://smansoft.com/openssl_android_scripts/windows-x86_64/openssl-1.1.1i.android.zip
 
