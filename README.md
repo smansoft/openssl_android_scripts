@@ -74,17 +74,17 @@ Note:
         
         Configure (build of apps is disabled, only build of static libs (.a) is provided);
         
-2. All paths (in script) should contain only "/" instead "\", i.e.:
+2. All paths (in script) should contain only "/" instead "\\", i.e.:
 
     D:/sman/sdk/android/android-sdk.cur/ndk-bundle
 
-3. Path in ANDROID_NDK_HOME should contain only "/" instead "\" too.
+3. Path in ANDROID_NDK_HOME should contain only "/" instead "\\" too.
 
-4. "\\" can contain only added to PATH:
+4. "\\" can be used only in PATH:
 
 	%ANDROID_NDK_HOME%\toolchains\llvm\prebuilt\windows-x86_64\bin
 	%ANDROID_NDK_HOME%\prebuilt\windows-x86_64\bin
-	as operational system requires "\";
+	as operation system (Windows) requires "\\";
 
 5.
 	open file
