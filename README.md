@@ -89,7 +89,7 @@ Note:
 5.
 	open file
 
-        Configurations\15-android.conf
+ 	       Configurations\15-android.conf
 
 	and update:
 
@@ -159,7 +159,7 @@ Note:
 6.
 	open file (perl script)
 
-	Configure
+		Configure
 
 	and update:
 
