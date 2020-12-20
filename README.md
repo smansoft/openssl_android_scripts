@@ -69,22 +69,26 @@ Scripts for build of the openssl lib (for Android x86, x86_6, armeabi-v7a, arm64
 
 Note:
 1. This archive contains changed files:
+
         Configurations/15-android.conf;
         
         Configure (build of apps is disabled, only build of static libs (.a) is provided);
         
 2. All paths (in script) should contain only "/" instead "\", i.e.:
+
     D:/sman/sdk/android/android-sdk.cur/ndk-bundle
 
 3. Path in ANDROID_NDK_HOME should contain only "/" instead "\" too.
 
 4. "\" can contain only added to PATH:
+
 	%ANDROID_NDK_HOME%\toolchains\llvm\prebuilt\windows-x86_64\bin
 	%ANDROID_NDK_HOME%\prebuilt\windows-x86_64\bin
 	as operational system requires "\";
 
 5.
 	open file
+
         Configurations\15-android.conf
 
 	and update:
@@ -153,14 +157,17 @@ Note:
                 'clang' is used instead 'gcc');
 
 	6. open file (perl script)
+
 	Configure
 
 		and update:
 
 	this:
+
     	$config{dirs} = [ "crypto", "ssl", "engines", "apps", "test", "util", "tools", "fuzz" ];
 
 	to:
+
     	$config{dirs} = [ "crypto", "ssl", "engines" ];
 
 	i.e.  build  of apps and other modules should be excepted (only static libs .a);
