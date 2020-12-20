@@ -80,7 +80,7 @@ Note:
 
 3. Path in ANDROID_NDK_HOME should contain only "/" instead "\" too.
 
-4. "\" can contain only added to PATH:
+4. "\\" can contain only added to PATH:
 
 	%ANDROID_NDK_HOME%\toolchains\llvm\prebuilt\windows-x86_64\bin
 	%ANDROID_NDK_HOME%\prebuilt\windows-x86_64\bin
