@@ -156,7 +156,8 @@ Note:
                 should  be  executed  code,  that "clang" is found (as
                 'clang' is used instead 'gcc');
 
-	6. open file (perl script)
+6.
+	open file (perl script)
 
 	Configure
 
