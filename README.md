@@ -6,10 +6,13 @@ Scripts for build of the openssl lib (for Android x86, x86_6, armeabi-v7a, arm64
 1. Install Cygwin (including perl for cygwin) or msys2 (including perl):
 
 	MSYS2:
+
 	https://sourceforge.net/projects/msys2/files/Base/
+
 	https://sourceforge.net/projects/msys2/
 
 	Cygwin:
+
 	https://sourceforge.net/projects/mingw-w64/
 
 2. Add path to Cygwin bin or MSYS2 (to the top of path);
