@@ -4,6 +4,10 @@ Scripts for build of the openssl lib (for Android x86, x86_6, armeabi-v7a, arm64
 
 ### Windows x86_64 (windows-x86_64/):
 
+openssl-1.1.1i:
+
+        http://smansoft.com/openssl_android_scripts/windows-x86_64/openssl-1.1.1i.android.zip
+
 1. Install Cygwin (including perl, make, gcc for cygwin):
 
     Cygwin:
@@ -177,6 +181,10 @@ Note:
 
 
 ### Linux (linux-x86_64/):
+
+openssl-1.1.1i:
+
+        http://smansoft.com/openssl_android_scripts/linux-x86_64/openssl-1.1.1i.android.tar.gz
 
 1. Add Environment Variables ANDROID_NDK_HOME and ANDROID_SDK_HOME:
 
