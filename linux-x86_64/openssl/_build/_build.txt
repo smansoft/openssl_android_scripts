@@ -1,0 +1,49 @@
+
+1. Add Environment Variables ANDROID_NDK_HOME and ANDROID_SDK_HOME:
+
+	export ANDROID_SDK_HOME=/home/strgs/sdb.07/sman/sdk/android/android-sdk.cur
+	export ANDROID_NDK_HOME=/home/strgs/sdb.07/sman/sdk/android/android-ndk-r21d
+
+2. Add follow path to $PATH Environment Variable:
+
+	export PATH=${ANDROID_NDK_HOME}/toolchains/llvm/prebuilt/linux-x86_64/bin:${PATH};
+
+3. Go to unpacked archive;
+
+4. Open file (perl script) "Configure"
+
+    and update this line:
+
+	$config{dirs} = [ "crypto", "ssl", "engines", "apps", "test", "util", "tools", "fuzz" ];
+    to:
+
+	$config{dirs} = [ "crypto", "ssl", "engines" ];
+
+    i.e.  build  of apps and other modules should be excepted (only static libs .a);
+
+5. Create in unpacked directory (OPENSSL sources direcroty) new subdirectory: _build;
+
+6. cd ./_build;
+
+	Note:	You can create directory _build somewhere or use some other directory for build.
+		Just you need setup variables in the script: _build_openssl.sh.
+
+7. copy file: _build_openssl.sh here;
+
+8. setup in _build_openssl.sh
+	export API_LEVEL=23;
+
+9. setup in _build_openssl.sh 
+	BUILD_TARGETS="armeabi-v7a arm64-v8a x86 x86_64";
+	i.e. remove unnecessary or add some other platforms;
+
+10. run: bash ./_build_openssl.sh
+
+11. built libs and includes will be copied to:
+
+	./libs/arm64-v8a
+	./libs/armeabi-v7a
+	./libs/x86
+	./libs/x86_64
+
+	./include

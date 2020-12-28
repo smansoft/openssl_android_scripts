@@ -1,22 +1,10 @@
 
-1. Install Cygwin (including perl for cygwin) or msys2 (including perl):
-
-	MSYS2:
-	https://sourceforge.net/projects/msys2/files/Base/
-	https://sourceforge.net/projects/msys2/
+1. Install Cygwin (including perl, make, gcc for cygwin):
 
 	Cygwin:
 	https://sourceforge.net/projects/mingw-w64/
 
-2. Add path to Cygwin bin or MSYS2 (to the top of path);
-	for example:
-
-		C:\msys2.20201109\
-		C:\msys2.20201109\usr\bin
-		C:\msys2.20201109\usr\lib\gnupg
-
-	or
-
+2. Add path to Cygwin bin;
 		C:\cygwin64
 		C:\cygwin64\bin
 		C:\cygwin64\sbin
@@ -25,16 +13,16 @@
 
 3. Unpack/install Android.ndk;
 	for example:
-    D:/sman/sdk/android/android-sdk.cur/ndk-bundle
+	D:/sman/sdk/android/android-sdk.cur/ndk-bundle
 
 4. Add Environment Variable ANDROID_NDK_HOME:
 	ANDROID_NDK_HOME="d:/sman/sdk/android/android-ndk-r21d"
     
 5. Add to the top of path:
-    %ANDROID_NDK_HOME%\toolchains\llvm\prebuilt\windows-x86_64\bin
+	%ANDROID_NDK_HOME%\toolchains\llvm\prebuilt\windows-x86_64\bin
 
 6. Add to the top of path:
-    %ANDROID_NDK_HOME%/prebuilt\windows-x86_64\bin
+	%ANDROID_NDK_HOME%/prebuilt\windows-x86_64\bin
 
 7. Go to unpacked archive;
 
@@ -44,24 +32,27 @@
 
 	Note:	You can create directory _build somewhere or use some other directory for build.
 		Just you need setup variables in the script: _build_openssl.sh.
+
+10. copy file: _build_openssl.sh here;
     
-10. setup in _build_openssl.sh 
-    export API_LEVEL=23
-
 11. setup in _build_openssl.sh 
-    BUILD_TARGETS="armeabi-v7a arm64-v8a x86 x86_64";
-    i.e. remove unnecessary or add some other platforms;
+	export API_LEVEL=23
 
-12. run: bash ./_build_openssl.sh
+12. setup in _build_openssl.sh 
+	BUILD_TARGETS="armeabi-v7a arm64-v8a x86 x86_64";
+	i.e. remove unnecessary or add some other platforms;
 
-13. built libs and includes will be copied into:
+13. run: bash ./_build_openssl.sh
 
-    ./_build/libs/arm64-v8a
-    ./_build/libs/armeabi-v7a
-    ./_build/libs/x86
-    ./_build/libs/x86_64 
+14. built libs and includes will be copied to:
 
-    ./_build/include
+	./libs/arm64-v8a
+	./libs/armeabi-v7a
+	/libs/x86
+	./libs/x86_64 
+
+	./include
+
 
 Note:
 1. This archive contains changed files:
@@ -70,7 +61,7 @@ Note:
         Configure (build of apps is disabled, only build of static libs (.a) is provided);
         
 2. All paths (in script) should contains only "/" instead "\", i.e.:
-    D:/sman/sdk/android/android-sdk.cur/ndk-bundle
+	D:/sman/sdk/android/android-sdk.cur/ndk-bundle
 
 3. Path in ANDROID_NDK_HOME should contains only "/" instead "\" too.
 
